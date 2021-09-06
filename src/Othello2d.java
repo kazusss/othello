@@ -28,16 +28,15 @@ public class Othello2d {
 		}
 	}
 
-	private int[][] board = {
-			{ 0, 0, 0, 0, 0, 0, 0, 0 },
-			{ 0, 0, 0, 0, 0, 0, 0, 0 },
-			{ 0, 0, 0, 0, 0, 0, 0, 0 },
-			{ 0, 0, 0, 1, 2, 0, 0, 0 },
-			{ 0, 0, 0, 2, 1, 0, 0, 0 },
-			{ 0, 0, 0, 0, 0, 0, 0, 0 },
-			{ 0, 0, 0, 0, 0, 0, 0, 0 },
-			{ 0, 0, 0, 0, 0, 0, 0, 0 },
-	};
+	private int[][] board = { //
+			{ 0, 0, 0, 0, 0, 0, 0, 0 }, //
+			{ 0, 0, 0, 0, 0, 0, 0, 0 }, //
+			{ 0, 0, 0, 0, 0, 0, 0, 0 }, //
+			{ 0, 0, 0, 1, 2, 0, 0, 0 }, //
+			{ 0, 0, 0, 2, 1, 0, 0, 0 }, //
+			{ 0, 0, 0, 0, 0, 0, 0, 0 }, //
+			{ 0, 0, 0, 0, 0, 0, 0, 0 }, //
+			{ 0, 0, 0, 0, 0, 0, 0, 0 }, };
 
 	public void showboard() {
 		System.out.println(this.header);
@@ -51,17 +50,49 @@ public class Othello2d {
 		}
 	}
 
-	public String toDisc(int i) {
-		switch (i) {
-		case 0:
-			return "・";
-		case 1:
-			return "●";
-		case 2:
-			return "〇";
-		default:
-			return "・";
-		}
+	private int checkRight() {
+
+		return 0;
 	}
 
+	private int checkLeft() {
+		return 0;
+	}
+
+	private int checkUp() {
+		return 0;
+	}
+
+	private int checkDown() {
+		return 0;
+	}
+
+	private int checkLeftUpeer() {
+		return 0;
+	}
+
+	private int checkRightUpper() {
+		return 0;
+	}
+
+	private int checkLeftDown() {
+		return 0;
+	}
+
+	private int checkRightDown() {
+		return 0;
+	}
+
+	public String toDisc(int i) {
+		switch (i) {
+			case 0:
+				return "・";
+			case 1:
+				return "●";
+			case 2:
+				return "〇";
+			default:
+				return "・";
+		}
+	}
 }
